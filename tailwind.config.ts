@@ -1,0 +1,101 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        mint: {
+          50: "#E6FEF3",
+          100: "#C7F8E3",
+          200: "#B8EDD6",
+          300: "#AFE0CB",
+          400: "#9FCAB8",
+          500: "#8AAF9F",
+          600: "#719082",
+          700: "#566D64",
+          800: "#394A43",
+          900: "#1C2823",
+          950: "#101815",
+        },
+        blueGrey: {
+          50: "#EFF1F4",
+          100: "#D9DEE5",
+          200: "#B9C2CF",
+          300: "#9CA9BC",
+          400: "#8492A6",
+          500: "#748193",
+          600: "#606A79",
+          700: "#49515D",
+          800: "#313840",
+          900: "#1A1E24",
+          950: "#0E1115",
+        },
+        paleBlue: {
+          50: "#F7FFFF",
+          100: "#E1F3FF",
+          200: "#C9EBFF",
+          300: "#B6E5FF",
+          400: "#8AD5FF",
+          500: "#75BDF1",
+          600: "#629CC8",
+          700: "#4B799A",
+          800: "#31526B",
+          900: "#162B3B",
+          950: "#0D1C26",
+        },
+        neutral: {
+          white: "#FFFFFF",
+          black: "#000000",
+        },
+      },
+      borderRadius: {
+        xs: "4px",
+        sm: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "24px",
+        pill: "999px",
+      },
+      spacing: {
+        none: "0",
+        xs: "4px",
+        sm: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "24px",
+        "2xl": "32px",
+        "3xl": "40px",
+        "4xl": "48px",
+        "5xl": "56px",
+      },
+      fontFamily: {
+        satoshi: ["Satoshi Variable", "Satoshi", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
+      },
+      fontSize: {
+        display: ["96px", { lineHeight: "104px", letterSpacing: "0" }],
+        "heading-1": ["60px", { lineHeight: "68px", letterSpacing: "0" }],
+        "heading-2": ["48px", { lineHeight: "56px", letterSpacing: "0" }],
+        "heading-3": ["34px", { lineHeight: "42px", letterSpacing: "0" }],
+        subtitle: ["20px", { lineHeight: "28px", letterSpacing: "0" }],
+        body: ["16px", { lineHeight: "24px", letterSpacing: "0" }],
+        "body-bold": ["16px", { lineHeight: "24px", letterSpacing: "0" }],
+        caption: ["12px", { lineHeight: "20px", letterSpacing: "0" }],
+        label: ["14px", { lineHeight: "18px", letterSpacing: "0" }],
+        overline: ["10px", { lineHeight: "18px", letterSpacing: "0" }],
+      },
+      fontWeight: {
+        regular: "400",
+        medium: "500",
+        bold: "700",
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
