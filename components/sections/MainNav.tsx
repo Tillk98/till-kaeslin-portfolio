@@ -15,12 +15,22 @@ export function MainNav() {
           </div>
           <span className="font-satoshi font-bold text-heading-3 text-neutral-black">Till</span>
         </div>
-        <nav className="flex items-center gap-lg">
-          <Button variant="outline" href="https://drive.google.com/file/d/1HkrZFNfKh0rUHK-xUZE2gO5tvUKxH7H3/view?usp=sharing" icon={<FileUser className="size-[18px]" />}>
-            Resume
+        <nav className="flex items-center gap-md md:gap-lg">
+          <Button
+            variant="outline"
+            href="https://drive.google.com/file/d/1HkrZFNfKh0rUHK-xUZE2gO5tvUKxH7H3/view?usp=sharing"
+            icon={<FileUser className="size-[18px]" />}
+            className="min-h-[40px] px-md md:min-h-0 md:px-lg"
+          >
+            <span className="hidden md:inline">Resume</span>
           </Button>
-          <Button variant="primary" href="https://www.linkedin.com/in/till-kaeslin/" icon={<Linkedin className="size-[18px]" />}>
-            LinkedIn
+          <Button
+            variant="primary"
+            href="https://www.linkedin.com/in/till-kaeslin/"
+            icon={<Linkedin className="size-[18px]" />}
+            className="min-h-[40px] px-md md:min-h-0 md:px-lg"
+          >
+            <span className="hidden md:inline">LinkedIn</span>
           </Button>
         </nav>
       </Container>
